@@ -1,2 +1,2 @@
 # learning-ai
-notebooks or codes for learning ai.
+notes or codes for learning ai.
