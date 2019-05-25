@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  nginx-proxy:
+    image: jupyter/datascience-notebook:9b06df75e445
+    container_name: jupyter
+    ports:
+      - 10000:8888
+    restart: always
+    environment:
+      JUPYTER_ENABLE_LAB: 'yes'
+    volumes:
+      - .:/home/jovyan/work
+      - ./jupyter_notebook_config.py:/home/jovyan/.jupyter/jupyter_notebook_config.py
