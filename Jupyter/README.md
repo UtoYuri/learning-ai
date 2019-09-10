@@ -9,3 +9,11 @@ docker-compose up -d
 
 ## usage
 open `http://localhost:10000` in browser and log in.
+
+## Tips
+to install packages
+```bash
+$ docker exec -it jupyter sh
+# in container
+$ pip install <package>
+```
